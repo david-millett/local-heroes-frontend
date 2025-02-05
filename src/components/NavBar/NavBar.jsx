@@ -32,7 +32,10 @@ const NavBar = ({ user, handleSignOut }) => {
                         <li><NavLink to="/" onClick={() => {setMenuOpen(false)}}>Dashboard</NavLink></li>
                         <li><NavLink to="/jobs" onClick={() => {setMenuOpen(false)}}>See Jobs</NavLink></li>
                         <li><NavLink to="/helpers" onClick={() => {setMenuOpen(false)}}>See helpers</NavLink></li>
-                        <li><NavLink to="" onClick={handleSignOut}>Sign Out</NavLink></li>
+                        <li><NavLink to="" onClick={() => {
+                            handleSignOut
+                            setMenuOpen(false) // ! Added this
+                        }}>Sign Out</NavLink></li>
                     </>
                         : 
                     <>
