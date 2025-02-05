@@ -29,15 +29,15 @@ const NavBar = ({ user, handleSignOut }) => {
                 <ul className={menuOpen ? `${styles.open}` : ""}>
                     
                     { user ? <>
-                        <li><NavLink to="/">Dashboard</NavLink></li>
-                        <li><NavLink to="/jobs">See Jobs</NavLink></li>
-                        <li><NavLink to="/helpers">See helpers</NavLink></li>
+                        <li><NavLink to="/" onClick={() => {setMenuOpen(false)}}>Dashboard</NavLink></li>
+                        <li><NavLink to="/jobs" onClick={() => {setMenuOpen(false)}}>See Jobs</NavLink></li>
+                        <li><NavLink to="/helpers" onClick={() => {setMenuOpen(false)}}>See helpers</NavLink></li>
                         <li><NavLink to="" onClick={handleSignOut}>Sign Out</NavLink></li>
                     </>
                         : 
                     <>
-                        <li><NavLink to="/signin">Sign In</NavLink></li>
-                        <li><NavLink to="/signup">Sign Up</NavLink></li>
+                        <li><NavLink to="/signin" onClick={() => {setMenuOpen(false)}}>Sign In</NavLink></li>
+                        <li><NavLink to="/signup" onClick={() => {setMenuOpen(false)}}>Sign Up</NavLink></li>
                     </>}
                 </ul>
             </nav>
