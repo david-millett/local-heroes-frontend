@@ -32,8 +32,8 @@ const App = () => {
 
   const navigate = useNavigate()
   
-  const handleSignOut = () => {
-    removeToken()
+  const handleSignOut = async () => {
+    await removeToken()
     setUser(null)
     navigate('/signin')
   }
