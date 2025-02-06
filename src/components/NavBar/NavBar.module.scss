@@ -12,16 +12,16 @@
     }
     h1 {
         position: absolute;
-        top: 3rem;
-        left: 3rem;
+        top: 1rem;
+        left: 1rem;
         color: white;
         font-family: "Bangers", system-ui;
         font-size: 7vw;
         // font-weight: 400;
         // font-style: normal;
-        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: black;
-        text-shadow: 10px 10px #000000;
+        text-shadow: 5px 5px #000000;
     }
     nav{
         // display: flex;
@@ -77,16 +77,10 @@
         }
     }
 
-    @media (max-width: 680px) {
+    @media (max-width: 980px) {
         h1 {
-            top: 1rem;
-            left: 1rem;
             font-size: 9vw;
-            -webkit-text-stroke-width: 1.5px;
-            -webkit-text-stroke-color: black;
-            text-shadow: 4px 4px #000000;
-
-
+            top: 0.25rem;
         }
         .menu {
             display: flex
@@ -110,6 +104,20 @@
         }
         nav ul li a {
             margin: 0.2rem 0.5rem
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .navContainer {
+        .menu {
+            height: 1rem;
+            span {
+                height: 0.2rem;
+                width: 100%;
+                background-color: #ffffff;
+                // border-radius: 0.2rem;
+            }
         }
     }
 }

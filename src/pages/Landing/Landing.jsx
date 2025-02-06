@@ -1,16 +1,17 @@
 import styles from './Landing.module.scss';
+import mainImage from '../../../public/images/neighbourhelp.jpg'
 
 const Landing = () => {
   return (
     <>
       <main>
+        <div className={styles.content}>
+            <h1>Helping others can help us feel a sense of belonging, make new friends, and connect with our communities.</h1>
+          <img className={styles.image} src={mainImage} alt='A neighbour helps with groceries' />
+        </div>
         <div className={styles.landingCopy}>
-          <p>Helping others can help us feel a sense of belonging, make new friends, and connect with our communities.</p>
-          <br />
           <p>Local Heroes is here to help people help themselves by helping others.</p>
-          <br />
           <p>Ask for help, offer help... either way, you’re a local hero!</p>
-          <br />
         </div>
         <div className={styles.landingPageButtons}>
           <a href="/signup" className={styles.buttonAuth} role="button">Sign Up</a>
