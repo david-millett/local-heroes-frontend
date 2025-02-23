@@ -1,6 +1,6 @@
 # Local Heroes
 
-Photo
+![Local Heroes](./public/screenshots/localheroes.png)
 
 ### 🔗 Links
 
